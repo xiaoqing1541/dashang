@@ -1,0 +1,103 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height:100%;
+}
+body{
+	 font-family: "微软雅黑";
+}
+ul ,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+   /*大容器*/       
+.main{
+       width:100%; 
+       height:100%;
+       background-size:cover ;
+       overflow: hidden;
+       background-color:#ea5a3c;
+       padding-bottom: 1.0em;
+    }
+    /*白色背景*/
+.whiteBg{
+	background: url(../img/whiteBg.png);
+	width: 90%;
+	background-size: cover;
+	margin:  auto;
+	text-align: center;
+	background-size:100% 100% ;
+	background-repeat:no-repeat ;
+	padding:1.3em  0.2em 1.3em 0.2em;
+	
+}
+/*红色框*/
+.whiteBg .redBg{
+	width: 90%;
+	margin: 0 auto;
+	border-radius:7px ;
+	border: 1px solid #ea5a3c;
+	-webkit-border-radius:7px ;
+	-moz-border-radius:7px ;
+	padding-bottom: 0.7em;
+}
+/*金币*/
+.dollar img{
+	width: 26%;
+	height: auto;
+	margin-top: -3.0em;
+}
+/*时间*/
+#times{
+	color: #8b8b8b;
+	margin-top: 0.2em;
+	margin-bottom: 0.4em;
+}
+/*打赏成功*/
+.successImg img{
+	width: 45%;
+	height: auto;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+.money{
+	margin-top: 0em;
+	margin-bottom: 0.3em;
+}
+/*完成*/
+.finish{
+	background-color: #ea5a3c;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: white;
+	font-size: 1.2em;
+	width: 40%;
+	margin: 0em auto;
+	text-align: center;
+	padding: 0.3em;
+}
+/*广告图*/
+.footer{
+	margin:  auto;
+	text-align: center;
+}
+.footer img{
+	width: 90%;
+	height: auto;
+	padding-top: 0.7em;
+}
+/*技术支持*/
+.zhichi{
+	margin: 0em auto;
+	text-align: center;
+}
+.zhichi img{
+	width: 60%;
+	height: auto;
+	padding-top: 1.0em;
+}

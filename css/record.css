@@ -1,0 +1,126 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height:100%;
+}
+body{
+	 font-family: "微软雅黑";
+}
+ul ,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.main{
+	width:100%; 
+    height:100%;
+    background-size:cover ;
+    overflow: hidden;
+    padding-bottom: 3.0em;
+}
+.header{
+	width: 100%;
+    padding-top: 1.2em;
+    padding-bottom: 1.8em;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #d85744;
+    color: white;
+    box-shadow:  0 7px 7px #d2d2d2;
+	-webkit-box-shadow:  0 7px 7px ##c9c9c9;;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.header_left{
+	float: left;
+	margin-left: 2em;
+}
+.header_right{
+	float: right;
+	margin-right:2em;
+}
+.number{
+	font-size: 1.6em;
+}
+.record{
+	margin: 0 auto;
+	border-bottom: 1px solid #C9C9C9;
+	border-top:1px solid #C9C9C9;
+	height: 100%;
+    overflow: scroll;
+    padding-bottom: 21em;
+    box-sizing: border-box;
+       
+}
+#thelist-wrap{
+   height: 100%;
+   overflow: hidden;
+   padding-bottom: 13em;
+}
+.record:before{
+	clear: both;
+	height: 0;
+}
+.record li{
+    width: 100%;
+    margin:10px auto;
+	text-align: center;
+	height: 60px;
+	white-space: nowrap;
+	border-bottom: 1px solid #C9C9C9;
+}
+.record > li:last-child{
+	/*border-bottom: none;*/
+}
+
+.img{
+	float: left;
+    position: relative;
+    top: -1px;
+    margin-left: 2vw;
+    border-radius:50% ;/*添加的*/
+	-webkit-border-radius:50% ;/*添加的*/
+}
+.img img{
+	width: 50px;
+	height: 50px;
+	border-radius:50% ;/*添加的*/
+	-webkit-border-radius:50% ;/*添加的*/
+}
+.info{
+    float: left;
+    text-align: left;
+    position: relative;
+    top: 5px;
+    left: 2.4em;
+    
+}
+.info p:nth-of-type(1){
+  	color:#4a4949;
+  	margin-bottom: 4px;
+  }
+.info p:nth-of-type(2){
+  	color: #b1b1b1;
+  	font-size: 0.8em;
+  	margin-top: 2px;
+  }
+.jine p:nth-of-type(1){
+	color: #0d0d0d;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.jine p:nth-of-type(2){
+	color: #b1b1b1;
+}
+.jine{
+	float: right;
+	position: relative;
+    top: -1px;
+    font-size: 1.1em;
+    margin-right: 3.0vw;
+}

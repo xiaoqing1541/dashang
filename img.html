@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"id="viewport" name="viewport">
+<title>图片生成</title>
+<link rel="stylesheet" type="text/css" href="css/img.css" />
+<script type="text/javascript" src="js/zepto.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+  <div class="footer">
+     
+     <div class="save-img-wrap">
+      <p class="choose-tip">请选择赞赏图片<img src="img/help1.png"></p>
+       <div class="img-choose">
+         <span>图1</span>
+          <span class="active">图2</span>
+           <span>图3</span>
+           <span>图4</span>
+       </div>
+       <div class="img-save-banner">
+         <img style="display: none;" src="img/picture1.png">
+         <img src="img/twoCode1.png">
+         <img style="display: none;" src="img/picture3.png">
+         <img style="display: none;" src="img/picture4.png">
+       </div>
+        <button class="submit-button">点击生成</button>
+    
+     </div>
+   
+    <div class="bottomS">
+    	<div class="bottomImg" >
+    		<img src="img/bottomImg.png" class="newImg" />
+    	</div>
+      <p class="clip">温馨提示：请长按图片保存到本地，嵌入文章使用</p>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+  $(function() {
+    /*解决流式bug  */
+    var bodyH = $('body').height();
+    $('body').css({
+      'min-height':bodyH
+    });
+    /*图片切换*/
+    $('.img-choose>span').click(function() {
+      $('.img-choose>span').removeClass('active');
+      $(this).toggleClass('active');
+      var index = $(this).index();
+      $('.img-save-banner>img').hide();
+      $('.img-save-banner>img').eq(index).show();
+      
+      //	假的点击生成图片 效果
+	      var _src =  $('.img-save-banner>img').eq(index).attr('src');
+	      $('.submit-button').click(function(){
+						$('.newImg').attr('src',_src);
+					})
+    });
+  });
+  
+</script>
+</html>

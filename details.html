@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta content="email=no" name="format-detection" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta name="keywords" content="收钱啦,打赏,支付宝,扫码,扫码支付,移动支付,二维码,二维码支付,微信,云管家，服务窗，支付宝服务窗，支付宝服务窗加盟，支付宝服务窗代理，服务窗代理，支付宝代理，支付宝加盟，支付宝服务窗云服务，服务窗商城，服务窗官网，云管家平台，支付宝服务窗管理平台">
+		<meta name="description" content="收钱啦支付宝,打赏,微信服务窗智能服务平台,是集支付宝pos,银联,打通口碑折扣,完美对接支付宝服务窗高级接口,帮助实现商圈、机场、餐饮、景区等多个O2O行业解决方案，助力传统行业进行互联网+服务全面升级。">
+		<meta name="HandheldFriendly" content="True">
+		<title> 打赏详情</title>
+		<link rel="icon" href="favicon.ico" type="x-icon">
+		<link rel="stylesheet" type="text/css" href="css/details.css"/>
+		<style type="text/css">
+			/* iPhone4/5 */
+@media (min-width: 300px) and  (max-width: 375px){
+  .recordInfo{
+	float: left;
+    text-align: left;
+    position: relative;
+    top: 18px;
+    left: 1.4em;
+    }
+.recordM{
+	float: right;
+    position: relative;
+    top: 28px;
+    font-size: 1.2em;
+    margin-right: 2vw;
+}
+}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<!--右上角部分-->
+			<div class="rightTop">
+				<div class="rightTopb">
+					<img src="img/ren.png"/>
+					<span>访问人数:<span>45</span></span>
+				</div>
+				<div class="rightTopb">
+					<img style="position: relative;top: 5px;" src="img/fen.png"/>
+					<span>分享次数:<span>45</span></span>
+				</div>
+			</div>
+			<div class="top">
+				<img src="img/touxiang.png" class="topImg"/>
+				<div class="topRight">
+					<p>亲爱的母亲节</p>
+				    <p>喜欢的，请ta喝杯咖啡吧</p>
+				</div>
+			</div>
+			<div class="link">
+				<p>打赏链接</p>
+				<div class="copy">
+					 <span><input  name="select1"  type="text" value="https://www.baidu.com/index.php?tn=78040160_40_pg" id="text1"/></span>
+				     <span><a style="color:#000000;;"  id="btn" href="http://www.jb51.net/article/53232.html">访问</a></span>
+				</div>
+				<p>长按输入框点击拷贝，复制链接</p>
+			</div>
+			<div class="twoCode">
+				<span id="twoCodeId">生成二维码打赏图片</span>
+				<span id="ImgTitle"><img src="img/help.png"/></span>
+			</div>
+			<div class="depict">
+				<span id="depictId">个性链接</span>
+				<span id="depictImg"><img src="img/help.png"/></span>
+			</div>
+			<!--弹框-->
+			<div class="mark">
+			</div>
+			<div class="tishi">
+					<p>是否生成图片？</p>
+					<span class="close">x</span>
+					<span class="sure">确定</span>
+			</div>
+			<div class="description">
+				<p>&nbsp;标题:<input type="text" /></p>
+				<p style="margin-bottom: 20px;">&nbsp;描述:<input type="text" /></p>
+				<span class="sure1">确定</span>
+				<span class="close">x</span>
+			</div>
+			<div class="depictTip">
+				<p style="margin-bottom: 20px;">设置个性链接</p>
+				<img src="img/titp.png"/>
+				<span class="close">x</span>
+			</div>
+			<!--弹框end-->
+			<div class="divides">
+				<img src="img/divide.png" class="divideImg"/>
+				<span>已有<span id="number">58</span>人打赏，累计<span id="money">100</span>元</span>
+				<img src="img/divide.png"class="divideImg"/>
+			</div>
+			<div id="pullDown"  style="display:none">
+                <span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+            </div>
+			 <div id="thelist-wrap" style="height: 100%;">
+				<div> 
+				  <ul class="record" id="thelist" >
+					<li>
+						<div class="recordImg">
+							<img src="img/header.png"/>
+						</div>
+						<div class="recordInfo">
+							<p>爱丽丝</p>
+							<p>2017-03-01 <span>15:16</span></p>
+						</div>
+						<div class="recordM">
+							<p><span>5.20</span>元</p>
+						</div>
+					</li>
+					<li>
+						<div class="recordImg">
+							<img src="img/header.png"/>
+						</div>
+						<div class="recordInfo">
+							<p>爱丽丝</p>
+							<p>2017-03-01 <span>15:16</span></p>
+						</div>
+						<div class="recordM">
+							<p><span>5.20</span>元</p>
+						</div>
+					</li>
+					<li>
+						<div class="recordImg">
+							<img src="img/header.png"/>
+						</div>
+						<div class="recordInfo">
+							<p>爱丽丝</p>
+							<p>2017-03-01 <span>15:16</span></p>
+						</div>
+						<div class="recordM">
+							<p><span>5.20</span>元</p>
+						</div>
+					</li>
+					<li >
+						<div class="recordImg">
+							<img src="img/header.png"/>
+						</div>
+						<div class="recordInfo">
+							<p>爱丽丝</p>
+							<p>2017-03-01 <span>15:16</span></p>
+						</div>
+						<div class="recordM">
+							<p><span>6.20</span>元</p>
+						</div>
+					</li>
+                   <div id="pullUp" style="display:none">
+			    <span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+			   </div>
+				  </ul>
+				</div>
+			</div>
+			
+		</div>
+		<script src="js/jquery-2.1.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/details.js" type="text/javascript" charset="utf-8"></script>
+		<!--点击问号出现弹框-->
+		<script type="text/javascript">
+			$('#ImgTitle').click(function(){
+				$('.mark').css('display','block');
+				$('.tishi').css('display','block');
+			})
+			$('.close').click(function(){
+				$('.tishi').css('display','none');
+				$('.mark').css('display','none');
+			})
+			$('.sure').click(function(){
+				$('.tishi').css('display','none');
+				$('.mark').css('display','none');
+				window.location.href='img.html';
+			
+			})
+		</script>
+		<script type="text/javascript">
+			$('#depictId').click(function(){
+				$('.mark').css('display','block');
+				$('.description').css('display','block');
+			})
+			
+			$('.sure1').click(function(){
+				$('.description').css('display','none');
+				$('.mark').css('display','none');
+				
+			
+			})
+			$('#depictImg').click(function(){
+				$('.mark').css('display','block');
+				$('.depictTip').css('display','block');
+			})
+			$('.close').click(function(){
+				$('.depictTip').css('display','none');
+				$('.mark').css('display','none');
+				$('.description').css('display','none');
+			})
+		</script>
+		<!--全选功能-->
+		<script type="text/javascript">
+//			长按全选
+	! function(a, b) {
+	"user strict";
+	a.jiance = {
+	_xy: [0, 0],
+	init: function(id, callback) {
+	var obj = document.getElementById(id);
+	obj.addEventListener('touchstart', function(event) {
+	if (event.targetTouches.length == 1) {　
+	//设置如果长按两秒
+	jiance.timeid = setTimeout(function() {
+	//准备进行复制........
+	typeof callback == 'function' && callback(touch, obj);
+	}, 1000);
+	//event.preventDefault();
+	var touch = event.targetTouches[0];
+	jiance._xy[0] = touch.pageX;
+	jiance._xy[1] = touch.pageY;
+	}
+	}, false);
+	obj.addEventListener('touchmove', function(event) {
+	if (event.targetTouches.length == 1) {　　　　
+	clearTimeout(jiance.timeid);
+	//event.preventDefault();
+	var touch = event.targetTouches[0];
+	//移动超过10个像素判断为选中文字
+	if ((Math.abs(touch.pageX - jiance._xy[0])) > 10) {
+	//准备进行复制........
+	typeof callback == 'function' && callback(touch, obj);
+	}
+	}
+	}, false);
+	obj.addEventListener('touchend', function(event) {
+	clearTimeout(jiance.timeid);
+	jiance._xy[0] = 0;
+	jiance._xy[1] = 0;
+	}, false);
+	}
+	}
+	}(window);
+	/**
+	 * 使用方法
+	 * @param  {[type]} touch [description]
+	 * @param  {[type]} dom)  { var        val [description]
+	 * @return {[type]}       [description]
+	 */
+	jiance.init('text1', function(touch, dom) {
+	var val = dom.value;
+	dom.setSelectionRange(0, val.length);
+	dom.focus();
+	});
+	</script>
+	<!--//		点击访问-->
+	<script type="text/javascript">
+
+		$('#btn').click(function(){
+			var text1 = $('#text1').val();
+			$('#btn').attr('href',text1);
+		})
+	</script>
+	<!--//点击二维码打赏图片跳转-->
+	<script type="text/javascript">
+		
+		$('#twoCodeId').click(function(){
+			window.location.href='img.html';
+		})
+	</script>
+	</body>
+</html>
